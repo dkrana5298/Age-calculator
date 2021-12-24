@@ -20,7 +20,13 @@ function age() {
       
     }
     var d = d2 - d1;
+    if(d>100){
+     d= parseInt(d/100);
+    }
     var m = m2 - m1;
+    if(m>100){
+      m=parseInt(m/100);
+    }
     var y = y2 - y1;
    
     document.getElementById('age').innerHTML = +y+' Years, '+m+' Months '+d+' Days';

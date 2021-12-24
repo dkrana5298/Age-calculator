@@ -34,9 +34,9 @@ function age() {
     document.getElementById('years').innerHTML="=  "+final_year.toFixed(2)+"  years";
     var final_month=y*12 + m + d/30 ;
     document.getElementById('months').innerHTML="=  "+final_month.toFixed(2)+"  months";
-    var final_weeks=y*52 + m*7 + d/7;
+    var final_weeks=y*52 + m*4 + d/7;
     document.getElementById('weeks').innerHTML="=  "+final_weeks.toFixed(2)+"  weeks";
-    var final_day=y*365 + m*12 + d ;
+    var final_day=y*365 + m*30 + d ;
     document.getElementById('days').innerHTML="=  "+final_day.toFixed(2)+"  days";
   }
   function reset(){

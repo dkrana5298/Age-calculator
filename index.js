@@ -65,6 +65,7 @@ function age() {
 
     if(d > 30){
       m = m + 1 ;
+      d=d-30;  
     }
     document.getElementById('age').innerHTML = +y+' Years, '+m+' Months '+d+' Days';
     var final_year=y + m/12 + d/365 ;
